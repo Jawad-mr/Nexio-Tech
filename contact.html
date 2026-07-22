@@ -1,0 +1,180 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Contact — Nexio Tech</title>
+<meta name="description" content="Get in touch with Nexio Tech via WhatsApp, phone, or email. Fast replies, real people.">
+<link rel="stylesheet" href="css/core.css">
+  <link rel="stylesheet" href="css/inner.css">
+</head>
+<body>
+<nav class="nav">
+  <div class="nav-inner">
+    <a href="index.html" class="nav-logo">
+      <span class="node"></span>NEXIO<span class="sub">TECH</span>
+    </a>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+      <li><a href="products.html">Products</a></li>
+      <li><a href="platform.html">Platform</a></li>
+      <li><a href="pricing.html">Pricing</a></li>
+      <li><a href="industries.html">Industries</a></li>
+      <li><a href="about.html">About</a></li>
+      <li><a href="faq.html">FAQ</a></li>
+      <li><a href="contact.html" class="active">Contact</a></li>
+    </ul>
+    <div class="nav-cta">
+      <a href="contact.html" class="btn btn-primary btn-sm">Get demo</a>
+      <button class="nav-toggle" aria-label="Menu"><span></span><span></span><span></span></button>
+    </div>
+  </div>
+</nav>
+
+<div class="page-head">
+  <div class="wrap">
+    <div class="breadcrumb"><a href="index.html">Home</a> / Contact</div>
+    <div class="eyebrow">Get in touch</div>
+    <h1>Let's talk about your business.</h1>
+    <p>The fastest way to reach us is WhatsApp — most messages get a real reply within the hour, not a bot.</p>
+  </div>
+</div>
+
+<section class="section">
+  <div class="wrap">
+    <div class="grid contact-grid">
+      <div class="reveal">
+        <div class="panel contact-option">
+          <div class="co-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M21 11.5a8.38 8.38 0 01-.9 3.8 8.5 8.5 0 01-7.6 4.7 8.38 8.38 0 01-3.8-.9L3 21l1.9-5.7a8.38 8.38 0 01-.9-3.8 8.5 8.5 0 014.7-7.6 8.38 8.38 0 013.8-.9h.5a8.48 8.48 0 018 8v.5z"/></svg></div>
+          <div>
+            <h4>WhatsApp</h4>
+            <p>Fastest response. Message us about any product, pricing, or setup question.</p>
+            <a href="https://wa.me/917204351696?text=Hi%20Nexio%20Tech%2C%20I'd%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="btn btn-whatsapp btn-sm">Start a chat →</a>
+          </div>
+        </div>
+        <div class="panel contact-option">
+          <div class="co-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M22 16.92v3a2 2 0 01-2.18 2 19.79 19.79 0 01-8.63-3.07 19.5 19.5 0 01-6-6 19.79 19.79 0 01-3.07-8.67A2 2 0 014.11 2h3a2 2 0 012 1.72c.127.96.361 1.903.7 2.81a2 2 0 01-.45 2.11L8.09 9.91a16 16 0 006 6l1.27-1.27a2 2 0 012.11-.45c.907.339 1.85.573 2.81.7A2 2 0 0122 16.92z"/></svg></div>
+          <div>
+            <h4>Call directly</h4>
+            <p>Prefer to talk it through? Call us and we'll walk through your setup live.</p>
+            <a href="tel:+917204351696" class="btn btn-ghost btn-sm">+91 72043 51696</a>
+          </div>
+        </div>
+        <div class="panel contact-option">
+          <div class="co-icon"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.5"><path d="M4 4h16v16H4z"/><path d="M4 6l8 7 8-7"/></svg></div>
+          <div>
+            <h4>Email</h4>
+            <p>For anything that needs documentation or a written trail.</p>
+            <a href="mailto:jsn.creators@gmail.com" class="btn btn-ghost btn-sm">jsn.creators@gmail.com</a>
+          </div>
+        </div>
+      </div>
+
+      <div class="panel reveal" style="padding: 40px;">
+        <h3 style="margin-bottom: 8px;">Send us a message</h3>
+        <p style="margin-bottom: 28px; font-size: 0.9rem;">Fill this out and it opens directly in WhatsApp, pre-filled and ready to send.</p>
+        <form id="contact-form">
+          <div class="form-field">
+            <label for="cf-name">Your name</label>
+            <input type="text" id="cf-name" placeholder="e.g. Ramesh Shetty" required>
+          </div>
+          <div class="form-field">
+            <label for="cf-business">Business type</label>
+            <select id="cf-business">
+              <option>Bakery</option>
+              <option>Gym / fitness studio</option>
+              <option>Restaurant</option>
+              <option>Hotel / guesthouse</option>
+              <option>AI Chatbot enquiry</option>
+              <option>E-Books Platform enquiry</option>
+              <option>Other</option>
+            </select>
+          </div>
+          <div class="form-field">
+            <label for="cf-message">Message</label>
+            <textarea id="cf-message" placeholder="Tell us a bit about what you need..."></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary btn-block">Send via WhatsApp</button>
+        </form>
+        <p class="form-note">Submitting opens WhatsApp with your details pre-filled — nothing is stored or sent anywhere else.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<script>
+document.getElementById('contact-form').addEventListener('submit', function(e) {
+  e.preventDefault();
+  const name = document.getElementById('cf-name').value || 'there';
+  const biz = document.getElementById('cf-business').value;
+  const msg = document.getElementById('cf-message').value || 'No additional details.';
+  const text = `Hi Nexio Tech, my name is ${name}. Business type: ${biz}. ${msg}`;
+  window.open('https://wa.me/917204351696?text=' + encodeURIComponent(text), '_blank');
+});
+</script>
+
+<footer class="footer">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div class="footer-brand">
+        <a href="index.html" class="nav-logo"><span class="node"></span>NEXIO<span class="sub">TECH</span></a>
+        <p>Operating systems for real-world businesses. Point of sale, management, and AI tools built by JSN CREATIVE — deployed in bakeries, gyms, restaurants and hotels.</p>
+        <div class="pill on" style="margin-top:20px;">All systems operational</div>
+      </div>
+      <div class="footer-col">
+        <h4>Products</h4>
+        <a href="products.html#bakery">Bakery POS</a>
+        <a href="products.html#gym">Gym Management</a>
+        <a href="products.html#restaurant">Restaurant POS</a>
+        <a href="products.html#hotel">Hotel Management</a>
+        <a href="products.html#chatbot">AI Chatbot</a>
+        <a href="products.html#ebooks">E-Books Platform</a>
+      </div>
+      <div class="footer-col">
+        <h4>Company</h4>
+        <a href="about.html">About Nexio Tech</a>
+        <a href="platform.html">Platform</a>
+        <a href="industries.html">Industries</a>
+        <a href="pricing.html">Pricing</a>
+        <a href="faq.html">FAQ</a>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <a href="https://wa.me/917204351696?text=Hi%20Nexio%20Tech%2C%20I%20have%20a%20question." target="_blank" rel="noopener">WhatsApp — +91 72043 51696</a>
+        <a href="tel:+917204351696">Call — +91 72043 51696</a>
+        <a href="mailto:jsn.creators@gmail.com">jsn.creators@gmail.com</a>
+        <a href="contact.html">Contact page</a>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 NEXIO TECH — a venture by <a href="https://www.jsncreative.studio" target="_blank" rel="noopener">JSN CREATIVE</a></span>
+      <span>Built for businesses that don't stop</span>
+    </div>
+  </div>
+</footer>
+<a href="https://wa.me/917204351696?text=Hi%20Nexio%20Tech%2C%20I'd%20like%20to%20get%20in%20touch." target="_blank" rel="noopener" class="wa-fab" aria-label="Chat on WhatsApp">
+  <svg viewBox="0 0 32 32" fill="none"><path d="M16.001 2.667C8.637 2.667 2.667 8.637 2.667 16c0 2.523.699 4.884 1.913 6.897L2.667 29.333l6.614-1.868A13.29 13.29 0 0016.001 29.333c7.364 0 13.333-5.97 13.333-13.333S23.365 2.667 16.001 2.667z" fill="#25D366"/><path d="M23.09 19.29c-.35-.175-2.07-1.021-2.39-1.138-.32-.117-.554-.175-.787.176-.234.35-.905 1.137-1.11 1.371-.204.234-.408.263-.758.088-.35-.176-1.475-.544-2.81-1.735-1.038-.926-1.74-2.07-1.944-2.42-.204-.35-.022-.54.153-.714.157-.157.35-.408.525-.613.175-.204.234-.35.35-.583.117-.234.059-.438-.03-.613-.087-.175-.786-1.897-1.078-2.598-.284-.683-.573-.59-.786-.601-.204-.01-.438-.012-.671-.012-.234 0-.613.088-.934.438-.32.35-1.225 1.197-1.225 2.92s1.254 3.386 1.429 3.62c.175.234 2.468 3.767 5.98 5.28.836.36 1.489.576 1.998.737.839.267 1.603.23 2.207.14.673-.1 2.07-.847 2.362-1.664.292-.817.292-1.518.204-1.664-.087-.146-.32-.234-.67-.409z" fill="#fff"/></svg>
+</a>
+
+<nav class="bottom-nav visible">
+  <a href="index.html" class="bottom-nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="m3 9 9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/><polyline points="9 22 9 12 15 12 15 22"/></svg>
+    <span>Home</span>
+  </a>
+  <a href="products.html" class="bottom-nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 16V8a2 2 0 0 0-1-1.73l-7-4a2 2 0 0 0-2 0l-7 4A2 2 0 0 0 3 8v8a2 2 0 0 0 1 1.73l7 4a2 2 0 0 0 2 0l7-4a2 2 0 0 0 1-1.73z"/><polyline points="3.27 6.96 12 12.01 20.73 6.96"/><line x1="12" y1="22.08" x2="12" y2="12"/></svg>
+    <span>Products</span>
+  </a>
+  <a href="pricing.html" class="bottom-nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="4" width="20" height="16" rx="2"/><line x1="2" y1="10" x2="22" y2="10"/></svg>
+    <span>Pricing</span>
+  </a>
+  <a href="contact.html" class="bottom-nav-item">
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
+    <span>Contact</span>
+  </a>
+</nav>
+
+<script src="js/main.js" defer></script>
+</body>
+</html>
