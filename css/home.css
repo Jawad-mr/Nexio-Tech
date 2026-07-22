@@ -4,12 +4,13 @@
 
 /* Hero */
 .hero {
-  padding: calc(var(--nav-h) + 120px) 0 110px;
+  padding: var(--nav-h) 0 0;
   position: relative;
   overflow: hidden;
-  min-height: 88vh;
+  min-height: 100vh;
   display: flex;
   align-items: center;
+  justify-content: center;
   background: #000000;
 }
 .hero-canvas {
@@ -175,4 +176,14 @@
   .process-step { padding-top: 0; }
   .process-dot { position: static; margin-bottom: 16px; }
   .hero-stats { flex-wrap: wrap; gap: 32px; }
+  .hero-inner { padding: 0 8px; }
+  .hero { padding-top: var(--nav-h); }
 }
+
+@media (max-width: 480px) {
+  .hero { min-height: 100svh; }
+  .hero-inner { padding: 0 4px; }
+  .hero-stats { gap: 24px; }
+  .hero-stat .num { font-size: 1.4rem; }
+}
+
