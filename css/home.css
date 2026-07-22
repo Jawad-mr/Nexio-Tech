@@ -17,7 +17,7 @@
   opacity: 0.8;
   pointer-events: none;
 }
-.hero-inner { position: relative; z-index: 2; max-width: 780px; }
+.hero-inner { position: relative; z-index: 2; max-width: 780px; margin: 0 auto; text-align: center; }
 .hero h1 {
   margin-bottom: 24px;
   letter-spacing: -0.04em;
@@ -30,8 +30,8 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.hero-sub { font-size: 1.12rem; max-width: 600px; margin-bottom: 40px; color: var(--text-dim); line-height: 1.62; }
-.hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; }
+.hero-sub { font-size: 1.12rem; max-width: 600px; margin: 0 auto 40px; color: var(--text-dim); line-height: 1.62; }
+.hero-actions { display: flex; gap: 16px; align-items: center; flex-wrap: wrap; justify-content: center; }
 
 .hero-stats {
   display: flex; gap: 48px;
@@ -39,6 +39,9 @@
   padding-top: 32px;
   border-top: 1px solid var(--line);
   max-width: 640px;
+  margin-left: auto;
+  margin-right: auto;
+  justify-content: center;
 }
 .hero-stat .num {
   font-family: var(--font-mono); font-size: 1.8rem; font-weight: 600; color: var(--text);
